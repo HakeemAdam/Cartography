@@ -5,6 +5,7 @@ var castle;
 var knife;
 var lion;
 var boat;
+var prince;
 
 function preload(){
   ft = loadFont('OldEnglishFive.ttf');
@@ -13,6 +14,7 @@ function preload(){
   knife = loadImage('004.svg');
   lion=loadImage('005.svg');
   boat = loadImage('006.svg');
+  prince = loadImage('007.png');
 
 }
 
@@ -30,10 +32,11 @@ function draw(){
 	background(0);
 
 
-  image(castle,100, 100, 100, 100);
+  image(prince,100, 100, 100, 100);
   image(knife, 200, 100, 100, 100);
   image(lion, 200, 200, 100, 100);
   image(boat, 100, 200, 100, 100);
+  //image(prince,100, 300, 100, 100);
 
 
 
