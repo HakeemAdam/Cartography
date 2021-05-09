@@ -7,6 +7,11 @@ var lion;
 var boat;
 var prince;
 
+var map1;
+var map2;
+var map3;
+var map4;
+
 function preload(){
   ft = loadFont('OldEnglishFive.ttf');
   im = loadImage('001.jpg');
@@ -15,6 +20,11 @@ function preload(){
   lion=loadImage('005.svg');
   boat = loadImage('006.svg');
   prince = loadImage('007.png');
+
+  map1 = loadImage('004.jpg');
+  map2 = loadImage('005.jpg');
+  map3 = loadImage('006.jpg');
+  map4 = loadImage('0001.jpg');
 
 }
 
@@ -32,19 +42,24 @@ function draw(){
 	background(0);
 
 
-  image(prince,100, 100, 100, 100);
-  image(knife, 200, 100, 100, 100);
-  image(lion, 200, 200, 100, 100);
-  image(boat, 100, 200, 100, 100);
+  //image(prince,100, 100, 100, 100);
+  //image(knife, 200, 100, 100, 100);
+  //image(lion, 200, 200, 100, 100);
+  //image(boat, 100, 200, 100, 100);
   //image(prince,100, 300, 100, 100);
 
+  image(map1, 50, 100, windowWidth * 0.2, windowHeight * 0.2);
+  image(map2, 50, 300, windowWidth * 0.2, windowHeight * 0.2 );
+  image(map3, 50, 500, windowWidth * 0.2, windowHeight * 0.2 );
+  image(map4, 50, 700, windowWidth * 0.2, windowHeight * 0.2 );
+  fill(255);
+  text("FIVE", height/2+400, width/2-100);
+  text("ONE",width/2,200);
 
 
 	angle+=0.01
 
   push();
-  text("FIVE", height/2-100, width/2-100);
-  text("ONE",width/2,200);
 	translate(width/2, height/2);
 	rotate(radians(frameCount %360));
   strokeWeight(3);
