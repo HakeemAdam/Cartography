@@ -12,6 +12,8 @@ var map2;
 var map3;
 var map4;
 
+var pointer;
+
 function preload(){
   ft = loadFont('OldEnglishFive.ttf');
   im = loadImage('001.jpg');
@@ -25,6 +27,7 @@ function preload(){
   map2 = loadImage('005.jpg');
   map3 = loadImage('006.jpg');
   map4 = loadImage('0001.jpg');
+  pointer = loadImage('group.svg');
 
 }
 
@@ -72,5 +75,5 @@ function draw(){
   pop();
 
 
-  image(im, mouseX, mouseY, 40, 32);
+  image(pointer, mouseX, mouseY, 40, 32);
 }
